@@ -9,21 +9,53 @@
   <title>Ohmyfood!</title>
 </head>
 <body>
+  <!-- Herder -->
   <header>
-    <i class="fas fa-arrow-left"></i>
-    <img src="public/img/logo/ohmyfood.png" alt="logo">
+    <div class="header__container">
+      <img src="public/img/logo/ohmyfood.png" alt="logo">
+    </div>
   </header>
+  <!-- Main -->
   <main>
+    <!-- Reservation -->
     <section class="reservation">
-      
+      <form action="#" method="get" id="reservation__ville">
+        <i class="fas fa-map-marker-alt map"></i>
+        <input type="search" id="search" placeholder="Paris, Belleville">
+      </form>
+      <div class="reservation__exploration">
+        <h1>Réservez le menu qui vous convient</h1>
+        <p>Découvrez des restaurents d'exception, séléctionnés par nos soins.</p>
+        <button class="btn">Explorer nos restaurants</button>
+      </div>
     </section>
+    <!-- Fonctionnement -->
     <section class="fonctionnement">
-
+      <div class="fonctionnement__container">
+        <h1>Fonctionnement</h1>
+        <div class="fonctionnement__regles">
+          <span>1</span>
+          <i class="fas fa-mobile-alt"></i>
+          <h3>Choisissez un restaurant</h3>
+        </div>
+        <div class="fonctionnement__regles">
+          <span>2</span>
+          <i class="fas fa-list-ul"></i>
+          <h3>Composez votre menu</h3>
+        </div>
+        <div class="fonctionnement__regles">
+          <span>3</span>
+          <i class="fas fa-store"></i>
+          <h3>Dégustez au restaurant</h3>
+        </div>
+      </div>
     </section>
+    <!-- Restaurents -->
     <section class="restaurent">
 
     </section>
   </main>
+  <!-- Footer -->
   <footer>
 
   </footer>

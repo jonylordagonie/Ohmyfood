@@ -1,0 +1,15 @@
+@mixin align-justify-center{
+  align-items: center;
+  justify-content:center;
+}
+@mixin btn--hover($color:$color-primary-light, $color-sec:$color-secondary-light){
+    background:linear-gradient(0deg, $color 0%, $color-sec  50%);
+    box-shadow: $shadow, $shadow;
+}
+@mixin actif($color){
+    background-color:lighten($color, 35%);
+    box-shadow: $shadow;
+    i{
+      color:$color;
+    }
+}

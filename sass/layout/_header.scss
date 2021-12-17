@@ -1,0 +1,11 @@
+.header__container{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 25px 0 10px 0;
+  box-shadow: $shadow;
+  img{
+    width: 180px;
+    margin: 0 auto;
+  }
+}

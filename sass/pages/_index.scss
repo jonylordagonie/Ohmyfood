@@ -1,0 +1,64 @@
+#reservation__ville{
+  display: flex;
+  @include align-justify-center;
+  background-color: $color-ville;
+  height: 60px;
+  gap: 20px;
+  i{
+    color: $color-footer;
+  }
+  input{
+    display: flex;
+    border: none;
+    background-color: inherit;
+  }
+}
+.reservation__exploration{
+  background-color: $color-font;
+  display: flex;
+  flex-direction: column;
+  @include align-justify-center;
+  padding: 40px 0;
+  gap: 10px;
+  h1{
+    text-align: center;
+    display: flex;
+    max-width: 60%;
+  }
+  p{
+    text-align: center;
+    display: flex;
+    max-width: 85%;
+    margin-bottom: 20px;
+  }
+}
+.fonctionnement__container{
+  margin: $margin;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  .fonctionnement__regles{
+    display: flex;
+    align-items: center;
+    background-color: $color-font;
+    color: $color-footer;
+    height: 80px;
+    box-shadow: $shadow;
+    gap: 15px;
+    border-radius: 20px;
+    width: 100%;
+    span{
+      display: flex;
+      margin-left: -10px;
+      @include align-justify-center;
+      width: 25px;
+      height: 25px;
+      background-color: $color-primary;
+      color: #fff;
+      border-radius: 50px;
+    }
+    &:hover{
+      @include actif($color-primary);
+    }
+  }
+}

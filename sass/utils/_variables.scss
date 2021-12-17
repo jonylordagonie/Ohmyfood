@@ -1,3 +1,15 @@
 $color-primary:#9356DC ;
 $color-secondary:#FF79DA;
 $color-tertiary:#99E2D0;
+$color-ville: #EAEAEA;
+$color-font:#F6F6F6;
+$color-footer: #353535;
+$color-primary-light: lighten($color-primary, 1%);
+$color-secondary-light: lighten($color-secondary, 1%);
+
+$margin: 0 15px; 
+
+$color-btn: linear-gradient(0deg, rgba(147,86,220,1) 0%, rgba(255,121,218,1) 100%);
+
+
+$shadow: 0px 5px 10px 0px rgba(0,0,0,0.3);
