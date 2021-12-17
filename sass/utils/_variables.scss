@@ -4,8 +4,8 @@ $color-tertiary:#99E2D0;
 $color-ville: #EAEAEA;
 $color-font:#F6F6F6;
 $color-footer: #353535;
-$color-primary-light: lighten($color-primary, 1%);
-$color-secondary-light: lighten($color-secondary, 1%);
+$color-primary-light: rgba($color-primary, .8);
+$color-secondary-light: rgba($color-secondary, .8);
 
 $margin: 50px 15px; 
 

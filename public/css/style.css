@@ -54,7 +54,7 @@ input::placeholder {
   box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.3);
 }
 .btn:hover {
-  background: linear-gradient(0deg, #965add 0%, #ff7edb 50%);
+  background: linear-gradient(0deg, rgba(147, 86, 220, 0.8) 0%, rgba(255, 121, 218, 0.8) 100%);
   box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.3), 0px 5px 10px 0px rgba(0, 0, 0, 0.3);
 }
 
