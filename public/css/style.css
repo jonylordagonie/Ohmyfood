@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,400;1,700&display=swap");
 body {
   margin: 0;
 }
@@ -26,6 +26,7 @@ h1 {
 
 p {
   font-size: 20px;
+  font-weight: 300;
 }
 
 input::placeholder {
@@ -142,6 +143,39 @@ input::placeholder {
 }
 .fonctionnement__container .fonctionnement__regles:hover i {
   color: #9356DC;
+}
+
+.restaurent {
+  background-color: #F6F6F6;
+}
+.restaurent .restaurent__container {
+  display: flex;
+  flex-direction: column;
+  margin: 50px 15px;
+  gap: 20px;
+}
+.restaurent .restaurent__card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.3);
+}
+.restaurent .restaurent__card img {
+  display: flex;
+  object-fit: cover;
+  border-radius: 15px 15px 0px 0;
+  height: 130px;
+}
+.restaurent .restaurent__card .restaurent__info__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 10px;
+  height: 70px;
+}
+.restaurent .restaurent__card .restaurent__card__info {
+  display: flex;
+  flex-direction: column;
 }
 
 /*# sourceMappingURL=style.css.map */

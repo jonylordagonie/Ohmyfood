@@ -62,3 +62,35 @@
     }
   }
 }
+.restaurent{
+  background-color: $color-font;
+  .restaurent__container{
+    display: flex;
+    flex-direction: column;
+    margin: $margin;
+    gap: 20px;
+  }
+  .restaurent__card{
+    display:flex;
+    flex-direction: column;
+    border-radius: 15px;
+    box-shadow: $shadow;
+    img{
+      display: flex;
+      object-fit: cover;
+      border-radius: 15px 15px 0px 0;
+      height: 130px;
+    }
+    .restaurent__info__container{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0 10px;
+      height: 70px;
+    }
+    .restaurent__card__info{
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
