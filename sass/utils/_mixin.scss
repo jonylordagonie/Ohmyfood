@@ -13,3 +13,7 @@
       color:$color;
     }
 }
+
+@mixin nouveau ($color){
+  background-color:lighten($color, 55%);
+}

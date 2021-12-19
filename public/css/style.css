@@ -42,6 +42,12 @@ input::placeholder {
   font-size: 18px;
 }
 
+.nouveau {
+  color: #008766;
+  font-weight: 700;
+  font-size: 16px;
+}
+
 .btn {
   margin: 0;
   padding: 20px;
@@ -57,6 +63,25 @@ input::placeholder {
 .btn:hover {
   background: linear-gradient(0deg, rgba(147, 86, 220, 0.8) 0%, rgba(255, 121, 218, 0.8) 100%);
   box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.3), 0px 5px 10px 0px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+.restaurent .fas {
+  color: #9356DC;
+  opacity: 0;
+  transition: all 400ms linear;
+}
+.restaurent .fas:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+.restaurent .far {
+  opacity: 1;
+  transition: all 400ms linear;
+}
+.restaurent .far:hover {
+  cursor: pointer;
+  opacity: 0;
 }
 
 .header__container {
@@ -69,6 +94,34 @@ input::placeholder {
 .header__container img {
   width: 180px;
   margin: 0 auto;
+}
+
+footer {
+  background-color: #353535;
+}
+footer .footer__container {
+  max-width: 1536px;
+  margin: 0 auto;
+  padding: 50px 15px;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+footer img {
+  filter: invert(100%);
+  width: 100px;
+  margin-bottom: 10px;
+}
+footer .footer__info {
+  display: flex;
+}
+footer a {
+  display: flex;
+  text-decoration: none;
+  color: #fff;
+  gap: 10px;
+  align-items: center;
 }
 
 #reservation__ville {
@@ -155,10 +208,24 @@ input::placeholder {
   gap: 20px;
 }
 .restaurent .restaurent__card {
-  display: flex;
-  flex-direction: column;
   border-radius: 15px;
   box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.3);
+}
+.restaurent .restaurent__card a {
+  text-decoration: none;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+}
+.restaurent .restaurent__card .nouveau {
+  border-radius: 2px;
+  background-color: #a1ffe8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 30px;
+  position: absolute;
 }
 .restaurent .restaurent__card img {
   display: flex;

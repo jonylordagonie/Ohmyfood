@@ -10,5 +10,6 @@
   box-shadow: $shadow;
   &:hover{
     @include btn--hover();
+    cursor: pointer;
   }
 }
