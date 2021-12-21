@@ -1,16 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,400;1,700&family=Shrikhand&display=swap");
 body {
-  margin: 0;
+  margin: 0 auto;
 }
 
 header {
   margin: 0 auto;
-  max-width: 1536px;
   display: flex;
   box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.3);
 }
 
 main {
+  margin: 0 auto;
+}
+
+.site__container {
   margin: 0 auto;
   max-width: 1536px;
 }
@@ -28,6 +31,7 @@ h1 {
   font-family: "Shrikhand", cursive;
   font-weight: 400;
   font-size: 30px;
+  max-width: 80%;
 }
 .menu__container h3 {
   display: flex;
@@ -40,9 +44,17 @@ h1 {
 }
 .menu__container h4 {
   font-size: 20px;
+  max-width: 90%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .menu__container p {
   font-size: 16px;
+  max-width: 85%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .menu__container b {
   color: #353535;
@@ -90,10 +102,16 @@ input::placeholder {
   cursor: pointer;
 }
 
+.heart {
+  position: relative;
+}
 .heart .fas {
   color: #9356DC;
   opacity: 0;
   transition: all 400ms linear;
+  position: absolute;
+  top: -15px;
+  right: 10px;
 }
 .heart .fas:hover {
   cursor: pointer;
@@ -102,6 +120,9 @@ input::placeholder {
 .heart .far {
   opacity: 1;
   transition: all 400ms linear;
+  position: absolute;
+  top: -15px;
+  right: 10px;
 }
 .heart .far:hover {
   cursor: pointer;
@@ -112,6 +133,10 @@ input::placeholder {
   height: 300px;
   width: 100%;
   object-fit: cover;
+}
+
+.menu--check {
+  background-color: #99E2D0;
 }
 
 .header__container {
@@ -181,6 +206,9 @@ footer a {
   align-items: center;
   width: 100%;
 }
+.menu__container .plat {
+  display: flex;
+}
 .menu__container .menu__carte {
   display: flex;
   flex-direction: column;
@@ -191,13 +219,16 @@ footer a {
   flex-direction: column;
   box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.3);
   background-color: #fff;
-  padding: 10px;
   border-radius: 10px;
+}
+.menu__container .menu__plat h4 {
+  padding: 10px 0 0 10px;
 }
 .menu__container .plat__desc {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0 10px 10px 10px;
 }
 
 #reservation__ville {
@@ -239,6 +270,7 @@ footer a {
 }
 
 .fonctionnement__container {
+  max-width: 1536px;
   margin: 50px 15px;
   display: flex;
   flex-direction: column;
@@ -292,6 +324,7 @@ footer a {
   color: #000;
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 .restaurent .restaurent__card .nouveau {
   border-radius: 2px;
@@ -302,6 +335,8 @@ footer a {
   width: 100px;
   height: 30px;
   position: absolute;
+  top: 10px;
+  right: 10px;
 }
 .restaurent .restaurent__card img {
   display: flex;

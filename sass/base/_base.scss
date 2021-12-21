@@ -1,14 +1,15 @@
 body{
-  margin: 0;
+  margin: 0 auto;
 }
-
 header{
   margin: 0 auto;
-  max-width: 1536px;
   display: flex;
   box-shadow: $shadow;
 }
 main{
+  margin: 0 auto;
+}
+.site__container{
   margin: 0 auto;
   max-width: 1536px;
 }

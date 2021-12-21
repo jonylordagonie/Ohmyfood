@@ -13,6 +13,9 @@
     align-items: center;
     width: 100%;
   }
+  .plat{
+    display: flex;
+  }
   .menu__carte{
     display: flex;
     flex-direction: column;
@@ -23,12 +26,15 @@
     flex-direction: column;
     box-shadow: $shadow;
     background-color: #fff;
-    padding: 10px;
     border-radius: 10px;
+    h4{
+      padding:10px 0 0 10px ;
+    }
   }
   .plat__desc{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding:0 10px 10px 10px ;
   }
 }
