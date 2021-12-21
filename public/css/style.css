@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,400;1,700&family=Shrikhand&display=swap");
 body {
   margin: 0;
 }
@@ -15,13 +15,37 @@ main {
   max-width: 1536px;
 }
 
-h1, h2, h3, p {
+h1, h2, h3, h4, p {
   margin: 0;
   font-family: "Roboto", sans-serif;
 }
 
 h1 {
   font-size: 26px;
+}
+
+.menu__container h1 {
+  font-family: "Shrikhand", cursive;
+  font-weight: 400;
+  font-size: 30px;
+}
+.menu__container h3 {
+  display: flex;
+  width: 40px;
+  flex: 0;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 18px;
+  border-bottom: 3px solid #99E2D0;
+}
+.menu__container h4 {
+  font-size: 20px;
+}
+.menu__container p {
+  font-size: 16px;
+}
+.menu__container b {
+  color: #353535;
 }
 
 p {
@@ -49,16 +73,16 @@ input::placeholder {
 }
 
 .btn {
-  margin: 0;
-  padding: 20px;
+  margin: 0 auto;
+  padding: 15px 20px;
   background: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
   display: flex;
   align-items: center;
   justify-content: center;
   border: none;
   border-radius: 30px;
-  height: 50px;
   box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.3);
+  min-width: 200px;
 }
 .btn:hover {
   background: linear-gradient(0deg, rgba(147, 86, 220, 0.8) 0%, rgba(255, 121, 218, 0.8) 100%);
@@ -66,22 +90,28 @@ input::placeholder {
   cursor: pointer;
 }
 
-.restaurent .fas {
+.heart .fas {
   color: #9356DC;
   opacity: 0;
   transition: all 400ms linear;
 }
-.restaurent .fas:hover {
+.heart .fas:hover {
   cursor: pointer;
   opacity: 1;
 }
-.restaurent .far {
+.heart .far {
   opacity: 1;
   transition: all 400ms linear;
 }
-.restaurent .far:hover {
+.heart .far:hover {
   cursor: pointer;
   opacity: 0;
+}
+
+.menu__img {
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
 }
 
 .header__container {
@@ -94,6 +124,17 @@ input::placeholder {
 .header__container img {
   width: 180px;
   margin: 0 auto;
+}
+.header__container a {
+  display: flex;
+  position: absolute;
+  margin: 50px 15px;
+  margin-top: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+.header__container i {
+  color: #353535;
 }
 
 footer {
@@ -121,6 +162,41 @@ footer a {
   text-decoration: none;
   color: #fff;
   gap: 10px;
+  align-items: center;
+}
+
+.menu__container {
+  background-color: #F6F6F6;
+  border-radius: 40px 40px 0 0;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-top: -60px;
+  padding: 30px;
+  gap: 40px;
+}
+.menu__container .menu__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.menu__container .menu__carte {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.menu__container .menu__plat {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.3);
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+}
+.menu__container .plat__desc {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 

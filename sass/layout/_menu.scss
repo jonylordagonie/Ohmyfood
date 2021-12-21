@@ -1,0 +1,34 @@
+.menu__container{
+  background-color: $color-font;
+  border-radius: 40px 40px 0 0;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-top: -60px;
+  padding: 30px;
+  gap:40px;
+  .menu__title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  .menu__carte{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .menu__plat{
+    display: flex;
+    flex-direction: column;
+    box-shadow: $shadow;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  .plat__desc{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

@@ -8,4 +8,15 @@
     width: 180px;
     margin: 0 auto;
   }
+  a{
+    display: flex;
+    position: absolute;
+    margin: $margin;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-decoration: none;
+  }
+  i{
+    color: $color-footer;
+  }
 }
