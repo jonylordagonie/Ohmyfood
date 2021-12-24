@@ -1,14 +1,14 @@
-.header__container{
+.header__container {
   display: flex;
   align-items: center;
   width: 100%;
   padding: 25px 0 10px 0;
   box-shadow: $shadow;
-  img{
+  img {
     width: 180px;
     margin: 0 auto;
   }
-  a{
+  a {
     display: flex;
     position: absolute;
     margin: $margin;
@@ -16,7 +16,7 @@
     margin-bottom: 0;
     text-decoration: none;
   }
-  i{
+  i {
     color: $color-footer;
   }
 }

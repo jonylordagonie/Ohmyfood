@@ -1,26 +1,26 @@
-footer{
+footer {
   background-color: $color-footer;
-  .footer__container{
+  .footer__container {
     max-width: 1536px;
     margin: 0 auto;
     padding: $margin;
     padding-top: 20px;
     display: flex;
     flex-direction: column;
-    gap:10px;
+    gap: 10px;
   }
-  img{
+  img {
     filter: invert(100%);
     width: 100px;
     margin-bottom: 10px;
   }
-  .footer__info{
+  .footer__info {
     display: flex;
   }
-  a{
+  a {
     display: flex;
     text-decoration: none;
-    color:#fff;
+    color: #fff;
     gap: 10px;
     align-items: center;
   }

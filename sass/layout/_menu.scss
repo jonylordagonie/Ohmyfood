@@ -1,40 +1,67 @@
-.menu__container{
+.menu__container {
   background-color: $color-font;
   border-radius: 40px 40px 0 0;
   display: flex;
   flex-direction: column;
   position: relative;
-  margin-top: -60px;
   padding: 30px;
-  gap:40px;
-  .menu__title{
+  gap: 40px;
+  max-width: 1536px;
+  margin:-60px auto 0 auto;
+  .menu__title {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
   }
-  .plat{
+  .plat {
     display: flex;
   }
-  .menu__carte{
+  .menu__carte {
     display: flex;
     flex-direction: column;
     gap: 15px;
+    &:hover{
+      cursor: pointer;
+    }
   }
-  .menu__plat{
+  .menu__plat {
     display: flex;
-    flex-direction: column;
+    align-items: center;
     box-shadow: $shadow;
     background-color: #fff;
     border-radius: 10px;
-    h4{
-      padding:10px 0 0 10px ;
+    height: 65px;
+    overflow: hidden;
+  }
+  .menu{
+    width: 100%;
+    padding:10px;
+    margin-right: -65px;
+    transition: 1s;
+    &:hover{
+      margin-right: 0;
     }
   }
-  .plat__desc{
+  .plat__desc {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding:0 10px 10px 10px ;
+  }
+}
+@media screen and (min-width: $query){
+  .menu__container{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    h1{
+      margin: 0 auto;
+    }
+    .menu__carte{
+    width: 30%;
+      h3{
+        margin:0 auto;
+      }
+    }
   }
 }

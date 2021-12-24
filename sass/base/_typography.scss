@@ -1,62 +1,69 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,400;1,700&family=Shrikhand&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,400;1,700&family=Shrikhand&display=swap");
 
-h1, h2, h3,h4, p{
+h1,
+h2,
+h3,
+h4,
+p,
+b {
   margin: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
-h1{
+h1 {
   font-size: 26px;
 }
-.menu__container{
-  h1{
-    font-family: 'Shrikhand', cursive;
+.menu__container {
+  h1 {
+    font-family: "Shrikhand", cursive;
     font-weight: 400;
     font-size: 30px;
     max-width: 80%;
   }
-  h3{
+  h3 {
     display: flex;
     width: 40px;
     flex: 0;
     text-transform: uppercase;
     font-weight: 300;
-    font-size:18px;
+    font-size: 18px;
     border-bottom: 3px solid $color-tertiary;
   }
-  h4{
+  h4 {
+    display: flex;
     font-size: 20px;
     max-width: 90%;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
   }
-  p{
+  p {
     font-size: 16px;
-    max-width: 85%;
+    max-width: 80%;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
   }
-  b{
-    color:$color-footer;
+  b {
+
+    color: $color-footer;
   }
 }
-p{
+p {
   font-size: 20px;
   font-weight: 300;
 }
-input::placeholder{
-  font-family: 'Roboto', sans-serif;
+input::placeholder {
+  font-family: "Roboto", sans-serif;
   font-size: 18px;
   font-weight: 700;
   color: $color-footer;
 }
-.btn{
-  font-family: 'Roboto', sans-serif;
+.btn {
+  font-family: "Roboto", sans-serif;
   color: #fff;
   font-size: 18px;
 }
-.nouveau{
+.nouveau {
   color: $color-nouveau;
   font-weight: 700;
   font-size: 16px;

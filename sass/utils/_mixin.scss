@@ -1,19 +1,22 @@
-@mixin align-justify-center{
+@mixin align-justify-center {
   align-items: center;
-  justify-content:center;
+  justify-content: center;
 }
-@mixin btn--hover($color:$color-primary-light, $color-sec:$color-secondary-light){
-    background:linear-gradient(0deg, $color 0%, $color-sec  100%);
-    box-shadow: $shadow, $shadow;
+@mixin btn--hover(
+  $color: $color-primary-light,
+  $color-sec: $color-secondary-light
+) {
+  background: linear-gradient(0deg, $color 0%, $color-sec 100%);
+  box-shadow: $shadow, $shadow;
 }
-@mixin actif($color){
-    background-color:lighten($color, 35%);
-    box-shadow: $shadow;
-    i{
-      color:$color;
-    }
+@mixin actif($color) {
+  background-color: lighten($color, 35%);
+  box-shadow: $shadow;
+  i {
+    color: $color;
+  }
 }
 
-@mixin nouveau ($color){
-  background-color:lighten($color, 55%);
+@mixin nouveau($color) {
+  background-color: lighten($color, 55%);
 }

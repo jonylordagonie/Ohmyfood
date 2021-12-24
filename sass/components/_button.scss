@@ -1,4 +1,4 @@
-.btn{
+.btn {
   margin: 0 auto;
   padding: 15px 20px;
   background: $color-btn;
@@ -7,8 +7,8 @@
   border: none;
   border-radius: 30px;
   box-shadow: $shadow;
-  min-width:200px;
-  &:hover{
+  min-width: 200px;
+  &:hover {
     @include btn--hover();
     cursor: pointer;
   }

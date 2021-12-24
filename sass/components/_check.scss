@@ -1,3 +1,16 @@
-.menu--check{
+.menu--check {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
   background-color: $color-tertiary;
+  color: #fff;
+  height: 100%;
+  width: 65px;
+  right: -65px;
+  margin-left: 10px;
+  transition:all 1s;
 }
+  .menu__plat:hover .menu--check{
+    right: 0;
+  }

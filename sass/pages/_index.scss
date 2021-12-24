@@ -1,44 +1,44 @@
-#reservation__ville{
+#reservation__ville {
   display: flex;
   @include align-justify-center;
   background-color: $color-ville;
   height: 60px;
   gap: 20px;
-  i{
+  i {
     color: $color-footer;
   }
-  input{
+  input {
     display: flex;
     border: none;
     background-color: inherit;
   }
 }
-.reservation__exploration{
+.reservation__exploration {
   background-color: $color-font;
   display: flex;
   flex-direction: column;
   @include align-justify-center;
   padding: 50px 0;
   gap: 10px;
-  h1{
+  h1 {
     text-align: center;
     display: flex;
     max-width: 60%;
   }
-  p{
+  p {
     text-align: center;
     display: flex;
     max-width: 85%;
     margin-bottom: 20px;
   }
 }
-.fonctionnement__container{
+.fonctionnement__container {
   max-width: 1536px;
   margin: $margin;
   display: flex;
   flex-direction: column;
   gap: 20px;
-  .fonctionnement__regles{
+  .fonctionnement__regles {
     display: flex;
     align-items: center;
     background-color: $color-font;
@@ -48,7 +48,7 @@
     gap: 15px;
     border-radius: 20px;
     width: 100%;
-    span{
+    span {
       display: flex;
       margin-left: -10px;
       @include align-justify-center;
@@ -58,30 +58,31 @@
       color: #fff;
       border-radius: 50px;
     }
-    &:hover{
+    &:hover {
       @include actif($color-primary);
     }
   }
 }
-.restaurent{
+.restaurent {
   background-color: $color-font;
-  .restaurent__container{
+  .restaurent__container {
     display: flex;
     flex-direction: column;
     margin: $margin;
     gap: 20px;
   }
-  .restaurent__card{
+  .restaurent__card {
     border-radius: 15px;
     box-shadow: $shadow;
-    a{
+    a {
       text-decoration: none;
       color: #000;
-      display:flex;
+      display: flex;
       flex-direction: column;
-      position:relative;
+      position: relative;
+      width: 100%;
     }
-    .nouveau{
+    .nouveau {
       border-radius: 2px;
       @include nouveau($color-nouveau);
       display: flex;
@@ -89,26 +90,54 @@
       width: 100px;
       height: 30px;
       position: absolute;
-      top:10px;
+      top: 10px;
       right: 10px;
     }
-    img{
+    img {
       display: flex;
       object-fit: cover;
       border-radius: 15px 15px 0px 0;
       height: 130px;
     }
-    .restaurent__info__container{
+    .restaurent__info__container {
       display: flex;
       justify-content: space-between;
       align-items: center;
       margin: 0 10px;
       height: 70px;
     }
-    .restaurent__card__info{
+    .restaurent__card__info {
       display: flex;
       flex-direction: column;
     }
   }
-
+}
+@media screen and (min-width: $query){
+  .fonctionnement__container{
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    h1{
+      width: 100%;
+    }
+    .fonctionnement__regles{
+      width: 30%;
+    }
+  }
+  .restaurent{
+  border-radius: 20px;
+  margin:$margin;
+  .restaurent__container{
+    padding: 15px;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  h1{
+    width: 100%;
+  }
+  .restaurent__card{
+    width: 45%;
+  }  
+  }
 }
