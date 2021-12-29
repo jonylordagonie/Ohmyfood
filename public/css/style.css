@@ -49,14 +49,14 @@ h1 {
 }
 .menu__container h4 {
   display: flex;
-  font-size: 20px;
+  font-size: 18px;
   max-width: 90%;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 .menu__container p {
-  font-size: 16px;
+  font-size: 15px;
   max-width: 80%;
   white-space: nowrap;
   overflow: hidden;
@@ -191,15 +191,14 @@ footer {
 footer .footer__container {
   max-width: 1536px;
   margin: 0 auto;
-  padding: 50px 15px;
-  padding-top: 20px;
+  padding: 20px 30px;
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 footer img {
   filter: invert(100%);
-  width: 100px;
+  width: 130px;
   margin-bottom: 10px;
 }
 footer .footer__info {
