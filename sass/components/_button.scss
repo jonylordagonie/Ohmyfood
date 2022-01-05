@@ -3,6 +3,7 @@
   padding: 15px 20px;
   background: $color-btn;
   display: flex;
+  animation: apparition .6s 1.6s linear both;
   @include align-justify-center;
   border: none;
   border-radius: 30px;
