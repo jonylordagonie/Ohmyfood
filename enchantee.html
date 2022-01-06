@@ -25,87 +25,145 @@
       <div class="menu__title">
         <H1>La note enchantée</H1>
         <div class="heart">
-          <i class="far fa-heart fa-2x heart--menu"></i>
-          <i class="fas fa-heart fa-2x heart--menu"></i>
+          <svg class="heart--menu" viewBox="0 0 32 32">
+            <linearGradient id="lgrad" x1="0%" y1="50%" x2="100%" y2="50%">
+              <stop offset="0%" style="stop-color:rgb(147,86,220);stop-opacity:1.00" />
+              <stop offset="100%" style="stop-color:rgb(255,121,218);stop-opacity:1.00" />
+            </linearGradient>
+            <path class="test1"
+              d="M16,28.261c0,0-14-7.926-14-17.046c0-9.356,13.159-10.399,14-0.454c1.011-9.938,14-8.903,14,0.454C30,20.335,16,28.261,16,28.261z" />
+            <path class="test2"
+              d="M16,28.261c0,0-14-7.926-14-17.046c0-9.356,13.159-10.399,14-0.454c1.011-9.938,14-8.903,14,0.454C30,20.335,16,28.261,16,28.261z" />
+          </svg>
         </div>
       </div>
-      <div class="menu__carte">
+      <div class="menu__carte menu__carte--entrees">
         <h3>Entrées</h3>
-        <div class="menu__plat">
-          <h4>Ravioles de foie gras</h4>
-          <div class="plat__desc">
-            <p>Accompagnés de leur crème à la truffe</p>
-            <p><b>25€</b></p>
+        <div class="menu__plat menu__plat--1">
+          <div class="menu">
+            <h4>Ravioles de foie gras</h4>
+            <div class="plat__desc">
+              <p>Accompagnés de leur crème à la truffe</p>
+              <b>25€</b>
+            </div>
+          </div>
+          <div class="menu--check">
+            <i class="fas fa-check-circle"></i>
           </div>
         </div>
-        <div class="menu__plat">
-          <h4>Caviar osciètre</h2>
+        <div class="menu__plat menu__plat--2">
+          <div class="menu">
+            <h4>Caviar osciètre</h4>
             <div class="plat__desc">
               <p>Sur blini à la farine de blé noir</p>
-              <p><b>35€</b></p>
+              <b>35€</b>
             </div>
+          </div>
+          <div class="menu--check">
+            <i class="fas fa-check-circle"></i>
+          </div>
         </div>
-        <div class="menu__plat">
-          <h4>Homard et espuma de potiron</h2>
+        <div class="menu__plat menu__plat--3">
+          <div class="menu">
+            <h4>Homard et espuma de potiron</h4>
             <div class="plat__desc">
               <p>Mariné aux zestes d'orange</p>
-              <p><b>20€</b></p>
+              <b>20€</b>
             </div>
+          </div>
+          <div class="menu--check">
+            <i class="fas fa-check-circle"></i>
+          </div>
         </div>
-        <div class="menu__plat">
-          <h4>Foie gras de canard cuit entier</h2>
+        <div class="menu__plat menu__plat--4">
+          <div class="menu">
+            <h4>Foie gras de canard cuit entier</h4>
             <div class="plat__desc">
               <p>Confiture de figue et pain toasté</p>
-              <p><b>35€</b></p>
+              <b>35€</b>
             </div>
+          </div>
+          <div class="menu--check">
+            <i class="fas fa-check-circle"></i>
+          </div>
         </div>
       </div>
-      <div class="menu__carte">
+      <div class="menu__carte menu__carte--plats">
         <h3>Plats</h3>
-        <div class="menu__plat">
-          <h4>Noix de coquilles Saint-Jacques</h2>
+        <div class="menu__plat menu__plat--1 ">
+          <div class="menu">
+            <h4>Noix de coquilles Saint-Jacques</h4>
             <div class="plat__desc">
               <p>Sur lit de purée de céleri-rave</p>
-              <p><b>40€</b></p>
+              <b>40€</b>
             </div>
+          </div>
+          <div class="menu--check">
+            <i class="fas fa-check-circle"></i>
+          </div>
         </div>
-        <div class="menu__plat">
-          <h4>Langoustine poêlée</h2>
+        <div class="menu__plat menu__plat--2">
+          <div class="menu">
+            <h4>Langoustine poêlée</h4>
             <div class="plat__desc">
               <p>Purée de patate douce</p>
-              <p><b>35€</b></p>
+              <b>35€</b>
             </div>
+          </div>
+          <div class="menu--check">
+            <i class="fas fa-check-circle"></i>
+          </div>
         </div>
-        <div class="menu__plat">
-          <h4>Mijoté de queue de boeuf</h2>
+        <div class="menu__plat menu__plat--3">
+          <div class="menu">
+            <h4>Mijoté de queue de boeuf</h4>
             <div class="plat__desc">
               <p>Et riz sauvage aux zestes de citron</p>
-              <p><b>44€</b></p>
+              <b>44€</b>
             </div>
+          </div>
+          <div class="menu--check">
+            <i class="fas fa-check-circle"></i>
+          </div>
         </div>
       </div>
-      <div class="menu__carte">
+      <div class="menu__carte menu__carte--desserts">
         <h3>Desserts</h3>
-        <div class="menu__plat">
-          <h4>Macaron noisette et chocolat</h2>
+        <div class="menu__plat menu__plat--1">
+          <div class="menu">
+            <h4>Macaron noisette et chocolat</h4>
             <div class="plat__desc">
               <p>Glace au caramel brun et sel de Guérande</p>
-              <p><b>18€</b></p>
+              <b>18€</b>
             </div>
+          </div>
+          <div class="menu--check">
+            <i class="fas fa-check-circle"></i>
+          </div>
         </div>
-        <div class="menu__plat">
-          <h4>Baba au rhum revisité</h2>
+        <div class="menu__plat menu__plat--2">
+          <div class="menu">
+            <h4>Baba au rhum revisité</h4>
             <div class="plat__desc">
               <p>Avec son coulis de citron</p>
-              <p><b>22€</b></p>
+              <b>22€</b>
             </div>
+          </div>
+          <div class="menu--check">
+            <i class=" fas fa-check-circle"></i>
+          </div>
         </div>
-        <div class="menu__plat">
-          <h4>Tarte au citron meringuée</h2>
+        <div class="menu__plat menu__plat--3">
+          <div class="menu">
+            <h4>Tarte au citron meringuée</h4>
             <div class="plat__desc">
               <p>Déstructurée</p>
-              <p><b>23€</b></p>
+              <b>23€</b>
             </div>
+          </div>
+          <div class="menu--check">
+            <i class="fas fa-check-circle"></i>
+          </div>
         </div>
       </div>
       <button class="btn">Commander</button>
