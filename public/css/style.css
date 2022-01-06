@@ -50,7 +50,7 @@ h1 {
 .menu__container h4 {
   display: flex;
   font-size: 18px;
-  max-width: 90%;
+  max-width: 80%;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -274,22 +274,33 @@ input::placeholder {
 
 .menu--check {
   display: flex;
+  padding: -10px;
   justify-content: center;
   align-items: center;
-  position: relative;
   background-color: #99e2d0;
   color: #fff;
   height: 100%;
   width: 65px;
-  right: -65px;
+  margin-right: -80px;
   margin-left: 10px;
   transition: all 1s;
 }
 
 .menu__plat:hover .menu--check {
-  right: 0;
+  margin-right: 0;
+}
+.menu__plat:hover .menu--check .fas {
+  animation: rotation 0.5s linear both;
 }
 
+@keyframes rotation {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 .header__container {
   display: flex;
   align-items: center;
@@ -340,16 +351,6 @@ footer a {
   align-items: center;
 }
 
-@keyframes apparition {
-  0% {
-    opacity: 0;
-    transform: translate(0, 10px);
-  }
-  100% {
-    opacity: 1;
-    transform: translate(0);
-  }
-}
 .menu__container {
   background-color: #f6f6f6;
   border-radius: 40px 40px 0 0;
@@ -401,19 +402,27 @@ footer a {
 .menu__container .menu__plat--4 {
   animation-delay: 1.6s;
 }
-.menu__container .menu {
-  width: 100%;
+.menu__container .menu__desc {
+  display: flex;
   padding: 10px;
-  margin-right: -65px;
+  width: 100%;
+  overflow: hidden;
+}
+.menu__container .menu {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
   transition: 1s;
+  flex: 1;
+  overflow: hidden;
 }
 .menu__container .menu:hover {
   margin-right: 0;
 }
-.menu__container .plat__desc {
+.menu__container .menu__prix {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
 
 @media screen and (min-width: 992px) {
@@ -439,6 +448,16 @@ footer a {
   }
   .menu__container .menu__carte--desserts {
     animation-delay: 0.2s;
+  }
+}
+@keyframes apparition {
+  0% {
+    opacity: 0;
+    transform: translate(0, 10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
   }
 }
 #reservation__ville {
@@ -594,7 +613,7 @@ footer a {
     width: 100%;
   }
   .restaurent .restaurent__card {
-    width: 45%;
+    width: 49%;
   }
 }
 

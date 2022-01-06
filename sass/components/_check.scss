@@ -1,16 +1,27 @@
 .menu--check {
   display: flex;
+  padding: -10px;
   justify-content: center;
   align-items: center;
-  position: relative;
   background-color: $color-tertiary;
   color: #fff;
   height: 100%;
   width: 65px;
-  right: -65px;
+  margin-right: -80px;
   margin-left: 10px;
   transition:all 1s;
 }
-  .menu__plat:hover .menu--check{
-    right: 0;
+.menu__plat:hover .menu--check{
+  margin-right: 0;
+  .fas{
+    animation: rotation .5s  linear both;
   }
+}
+@keyframes rotation {
+  0%{
+    transform: rotate(0);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
