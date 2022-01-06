@@ -35,6 +35,7 @@
     border-radius: 10px;
     height: 65px;
     overflow: hidden;
+    text-overflow: ellipsis;
     animation: apparition .6s .2s linear both;
     &--1{
       animation-delay: $timming-1;
@@ -54,6 +55,7 @@
   padding: 10px;
   width: 100%;
   overflow: hidden;
+  text-overflow: ellipsis;
 }
   .menu{
     display: flex;
@@ -62,6 +64,7 @@
     transition: 1s;
     flex:1;
     overflow: hidden;
+    text-overflow: ellipsis;
     &:hover{
       margin-right: 0;
     }
