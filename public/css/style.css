@@ -183,6 +183,10 @@ input::placeholder {
     opacity: 1;
     transform: translate(0);
   }
+  99% {
+    opacity: 0;
+    transform: translate(0);
+  }
   100% {
     opacity: 0;
     transform: translate(0, -200%);
@@ -236,7 +240,55 @@ input::placeholder {
 .heart .heart--menu {
   top: -15px;
 }
+.heart svg {
+  position: absolute;
+  top: -50px;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+}
+.heart .test1 {
+  fill: transparent;
+  stroke: black;
+  stroke-width: 2px;
+}
+.heart .test1:hover {
+  cursor: pointer;
+}
+.heart .test2 {
+  fill: url(#lgrad);
+  transform: scale(0);
+  opacity: 0;
+  transition: all 400ms linear;
+  transform-origin: bottom;
+}
+.heart .test2:hover {
+  cursor: pointer;
+  animation: remplir 1s linear both;
+}
+.heart .test1:hover + .test2 {
+  cursor: pointer;
+  animation: remplir 1s linear both;
+}
 
+@keyframes remplir {
+  0% {
+    opacity: 0.2;
+    transform: scale(0);
+  }
+  25% {
+    opacity: 0.5;
+    transform: scale(0.25);
+  }
+  75% {
+    opacity: 0.5;
+    transform: scale(0.75);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
 .menu__img {
   height: 300px;
   width: 100%;

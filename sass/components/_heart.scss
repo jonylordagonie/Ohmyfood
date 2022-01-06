@@ -26,4 +26,54 @@
   .heart--menu{
   top:-15px;
   }
+  svg{
+  position: absolute;
+  top: -50px;
+  right: 10px;
+  width: 30px;
+  height: 30px;
 }
+  .test1 {
+    fill:transparent;
+    stroke: black;
+    stroke-width: 2px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  .test2 {
+    fill: url(#lgrad);
+    transform: scale(0);
+    opacity: 0;
+    transition: all 400ms linear;
+    transform-origin: bottom;
+    &:hover{
+      cursor: pointer;
+      animation: remplir 1s linear both;
+    }
+
+  }
+  .test1:hover + .test2{
+      cursor: pointer;
+      animation: remplir 1s linear both;
+    }
+}
+@keyframes remplir{
+  0%{
+    opacity: .2;
+    transform: scale(0);
+  }
+  25%{
+    opacity: .5;
+    transform: scale(.25);
+  }
+  75%{
+    opacity: .5;
+    transform: scale(.75);
+  }
+  100%{
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
