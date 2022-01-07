@@ -39,6 +39,12 @@ h1 {
   font-size: 30px;
   max-width: 80%;
 }
+.menu__container h2 {
+  font-family: "Shrikhand", cursive;
+  font-weight: 400;
+  font-size: 30px;
+  max-width: 80%;
+}
 .menu__container h3 {
   display: flex;
   width: 40px;
@@ -49,7 +55,6 @@ h1 {
   border-bottom: 3px solid #99e2d0;
 }
 .menu__container h4 {
-  display: flex;
   font-size: 18px;
   max-width: 80%;
   white-space: nowrap;
@@ -103,7 +108,7 @@ input::placeholder {
   z-index: 1;
   animation: 3s 0.1s disparition linear both;
 }
-.loader__container h1 {
+.loader__container span {
   font-family: "Shrikhand", cursive;
   font-size: 40px;
   color: #000;
@@ -222,26 +227,26 @@ input::placeholder {
   width: 30px;
   height: 30px;
 }
-.heart .test1 {
+.heart .heart--1 {
   fill: transparent;
   stroke: black;
   stroke-width: 2px;
 }
-.heart .test1:hover {
+.heart .heart--1:hover {
   cursor: pointer;
 }
-.heart .test1:hover + .test2 {
+.heart .heart--1:hover + .heart--2 {
   cursor: pointer;
   animation: remplir 1s linear both;
 }
-.heart .test2 {
+.heart .heart--2 {
   fill: url(#lgrad);
   transform: scale(0);
   opacity: 0;
   transition: all 400ms linear;
   transform-origin: bottom;
 }
-.heart .test2:hover {
+.heart .heart--2:hover {
   cursor: pointer;
   animation: remplir 1s linear both;
 }
@@ -275,7 +280,7 @@ input::placeholder {
 
 .menu--check {
   display: flex;
-  padding: -10px;
+  padding: 10px;
   justify-content: center;
   align-items: center;
   background-color: #99e2d0;
@@ -596,7 +601,7 @@ footer a {
     flex-wrap: wrap;
     justify-content: space-between;
   }
-  .fonctionnement__container h1 {
+  .fonctionnement__container h2 {
     width: 100%;
   }
   .fonctionnement__container .fonctionnement__regles {
@@ -613,11 +618,11 @@ footer a {
     justify-content: space-between;
     flex-wrap: wrap;
   }
-  .restaurent h1 {
+  .restaurent h2 {
     width: 100%;
   }
   .restaurent .restaurent__card {
-    width: 49%;
+    width: 48%;
   }
 }
 
