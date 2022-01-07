@@ -25,6 +25,15 @@
     &:hover{
       cursor: pointer;
     }
+    &--entrees{
+      animation-delay: $timming-entrees;
+    }
+    &--plats{
+      animation-delay: $timming-plats;
+    }
+    &--desserts{
+      animation-delay: $timming-desserts;
+    }
 
   }
   .menu__plat {
@@ -48,6 +57,24 @@
     }
     &--4{
       animation-delay: $timming-4;
+    }
+    &--5{
+      animation-delay: $timming-5;
+    }
+    &--6{
+      animation-delay: $timming-6;
+    }
+    &--7{
+      animation-delay: $timming-7;
+    }
+    &--8{
+      animation-delay: $timming-8;
+    }
+    &--9{
+      animation-delay: $timming-9;
+    }
+    &--10{
+      animation-delay: $timming-10;
     }
   }
 .menu__desc{
@@ -96,6 +123,17 @@
       }
       &--desserts{
         animation-delay: .2s;
+      }
+    }
+    .menu__plat{
+      &--1,&--5,&--8{
+        animation-delay: $timming-1;
+      }
+      &--2,&--6,&--9{
+        animation-delay: $timming-2;
+      }
+      &--3,&--7,&--10{
+        animation-delay: $timming-3;
       }
     }
   }

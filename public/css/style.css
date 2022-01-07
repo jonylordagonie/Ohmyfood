@@ -203,7 +203,7 @@ input::placeholder {
   padding: 15px 20px;
   background: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
   display: flex;
-  animation: apparition 0.6s 1.6s linear both;
+  animation: apparition 0.6s 4.8s linear both;
   align-items: center;
   justify-content: center;
   border: none;
@@ -217,6 +217,11 @@ input::placeholder {
   cursor: pointer;
 }
 
+@media screen and (min-width: 992px) {
+  .btn {
+    animation-delay: 2.2s;
+  }
+}
 .heart {
   position: relative;
 }
@@ -287,7 +292,7 @@ input::placeholder {
   color: #fff;
   height: 100%;
   width: 65px;
-  margin-right: -80px;
+  margin-right: -85px;
   margin-left: 10px;
   transition: all 1s;
 }
@@ -386,6 +391,15 @@ footer a {
 .menu__container .menu__carte:hover {
   cursor: pointer;
 }
+.menu__container .menu__carte--entrees {
+  animation-delay: 0.2s;
+}
+.menu__container .menu__carte--plats {
+  animation-delay: 1.8s;
+}
+.menu__container .menu__carte--desserts {
+  animation-delay: 3.2s;
+}
 .menu__container .menu__plat {
   display: flex;
   align-items: center;
@@ -408,6 +422,24 @@ footer a {
 }
 .menu__container .menu__plat--4 {
   animation-delay: 1.6s;
+}
+.menu__container .menu__plat--5 {
+  animation-delay: 2.2s;
+}
+.menu__container .menu__plat--6 {
+  animation-delay: 2.6s;
+}
+.menu__container .menu__plat--7 {
+  animation-delay: 3s;
+}
+.menu__container .menu__plat--8 {
+  animation-delay: 3.6s;
+}
+.menu__container .menu__plat--9 {
+  animation-delay: 4s;
+}
+.menu__container .menu__plat--10 {
+  animation-delay: 4.4s;
 }
 .menu__container .menu__desc {
   display: flex;
@@ -457,6 +489,15 @@ footer a {
   }
   .menu__container .menu__carte--desserts {
     animation-delay: 0.2s;
+  }
+  .menu__container .menu__plat--1, .menu__container .menu__plat--5, .menu__container .menu__plat--8 {
+    animation-delay: 0.4s;
+  }
+  .menu__container .menu__plat--2, .menu__container .menu__plat--6, .menu__container .menu__plat--9 {
+    animation-delay: 0.8s;
+  }
+  .menu__container .menu__plat--3, .menu__container .menu__plat--7, .menu__container .menu__plat--10 {
+    animation-delay: 1.2s;
   }
 }
 @keyframes apparition {

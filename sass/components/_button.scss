@@ -3,7 +3,7 @@
   padding: 15px 20px;
   background: $color-btn;
   display: flex;
-  animation: apparition .6s 1.6s linear both;
+  animation: apparition .6s $timming-btn linear both;
   @include align-justify-center;
   border: none;
   border-radius: 30px;
@@ -12,5 +12,10 @@
   &:hover {
     @include btn--hover();
     cursor: pointer;
+  }
+}
+@media screen and (min-width: $query){
+  .btn{
+    animation-delay: $timming-5;
   }
 }
