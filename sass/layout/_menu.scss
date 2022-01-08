@@ -7,7 +7,7 @@
   padding: 30px;
   gap: 40px;
   max-width: 1536px;
-  margin:-60px auto 0 auto;
+  margin: -60px auto 0 auto;
   .menu__title {
     display: flex;
     justify-content: space-between;
@@ -21,20 +21,19 @@
     display: flex;
     flex-direction: column;
     gap: 15px;
-    animation: apparition 1s .2s linear both;
-    &:hover{
+    animation: apparition 1s 0.2s linear both;
+    &:hover {
       cursor: pointer;
     }
-    &--entrees{
+    &--entrees {
       animation-delay: $timming-entrees;
     }
-    &--plats{
+    &--plats {
       animation-delay: $timming-plats;
     }
-    &--desserts{
+    &--desserts {
       animation-delay: $timming-desserts;
     }
-
   }
   .menu__plat {
     display: flex;
@@ -45,105 +44,111 @@
     height: 65px;
     overflow: hidden;
     text-overflow: ellipsis;
-    animation: apparition .6s .2s linear both;
-    &--1{
+    animation: apparition 0.6s 0.2s linear both;
+    &--1 {
       animation-delay: $timming-1;
     }
-    &--2{
+    &--2 {
       animation-delay: $timming-2;
     }
-    &--3{
+    &--3 {
       animation-delay: $timming-3;
     }
-    &--4{
+    &--4 {
       animation-delay: $timming-4;
     }
-    &--5{
+    &--5 {
       animation-delay: $timming-5;
     }
-    &--6{
+    &--6 {
       animation-delay: $timming-6;
     }
-    &--7{
+    &--7 {
       animation-delay: $timming-7;
     }
-    &--8{
+    &--8 {
       animation-delay: $timming-8;
     }
-    &--9{
+    &--9 {
       animation-delay: $timming-9;
     }
-    &--10{
+    &--10 {
       animation-delay: $timming-10;
     }
   }
-.menu__desc{
-  display: flex;
-  padding: 10px;
-  width: 100%;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-  .menu{
+  .menu__desc {
     display: flex;
-    flex-direction: column;
-    flex:1;
-    transition: 1s;
-    flex:1;
+    padding: 10px;
+    width: 100%;
     overflow: hidden;
     text-overflow: ellipsis;
-    &:hover{
+  }
+  .menu {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    transition: 1s;
+    flex: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    &:hover {
       margin-right: 0;
     }
   }
-  .menu__prix{
+  .menu__prix {
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
   }
 }
-@media screen and (min-width: $query){
-  .menu__container{
+@media screen and (min-width: $query) {
+  .menu__container {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    h1{
+    h1 {
       margin: 0 auto;
     }
-    .menu__carte{
-    width: 30%;
-      h3{
-        margin:0 auto;
+    .menu__carte {
+      width: 30%;
+      h3 {
+        margin: 0 auto;
       }
-      &--entrees{
-        animation-delay: .2s;
+      &--entrees {
+        animation-delay: 0.2s;
       }
-      &--plats{
-        animation-delay: .2s;
+      &--plats {
+        animation-delay: 0.2s;
       }
-      &--desserts{
-        animation-delay: .2s;
+      &--desserts {
+        animation-delay: 0.2s;
       }
     }
-    .menu__plat{
-      &--1,&--5,&--8{
+    .menu__plat {
+      &--1,
+      &--5,
+      &--8 {
         animation-delay: $timming-1;
       }
-      &--2,&--6,&--9{
+      &--2,
+      &--6,
+      &--9 {
         animation-delay: $timming-2;
       }
-      &--3,&--7,&--10{
+      &--3,
+      &--7,
+      &--10 {
         animation-delay: $timming-3;
       }
     }
   }
 }
-@keyframes apparition{
-  0%{
+@keyframes apparition {
+  0% {
     opacity: 0;
-    transform: translate(0,10px);
+    transform: translate(0, 10px);
   }
-  100%{
+  100% {
     opacity: 1;
     transform: translate(0);
   }

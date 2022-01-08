@@ -203,7 +203,6 @@ input::placeholder {
   padding: 15px 20px;
   background: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
   display: flex;
-  animation: apparition 0.6s 4.8s linear both;
   align-items: center;
   justify-content: center;
   border: none;
@@ -216,9 +215,12 @@ input::placeholder {
   box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.3), 0px 5px 10px 0px rgba(0, 0, 0, 0.3);
   cursor: pointer;
 }
+.btn--menu {
+  animation: apparition 0.6s 4.8s linear both;
+}
 
 @media screen and (min-width: 992px) {
-  .btn {
+  .btn--menu {
     animation-delay: 2.2s;
   }
 }
@@ -246,9 +248,7 @@ input::placeholder {
 }
 .heart .heart--2 {
   fill: url(#lgrad);
-  transform: scale(0);
   opacity: 0;
-  transition: all 400ms linear;
   transform-origin: bottom;
 }
 .heart .heart--2:hover {
